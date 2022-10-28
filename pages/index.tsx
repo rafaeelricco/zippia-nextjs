@@ -3,6 +3,7 @@ import { Button } from '@mantine/core'
 import Link from 'next/link'
 import styled from 'styled-components'
 
+// container home
 const ContainerHome = styled.div`
   display: grid;
   justify-items: center;
@@ -12,14 +13,14 @@ const ContainerHome = styled.div`
   grid-template-columns: 100vw;
   grid-template-rows: 100vh;
 `
-
+// center items in to container
 const ContainerItems = styled.div`
   display: grid;
   justify-items: center;
   align-items: center;
   gap: 2.618rem;
 `
-
+// logo styles
 const Logo = styled.img`
   width: 50%;
 `
@@ -32,7 +33,7 @@ export default function Home() {
           <Logo src="/icons/zippia-logo.png" alt="logo" />
           <Link href={'/test/jobs'}>
             <Button size="md" radius={'md'} variant="light" color={'blue'}>
-              Find your dream job!
+              Find your job!
             </Button>
           </Link>
         </ContainerItems>

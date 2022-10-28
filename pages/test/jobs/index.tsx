@@ -34,9 +34,9 @@ export default function JobsPage() {
         })
       })
       const data = await response.json()
-      setJobs(data.jobs)
-      setState(data.jobs)
-      setLoading(false)
+      setJobs(data.jobs) // set jobs to jobs state
+      setState(data.jobs) // set jobs to state
+      setLoading(false) // turn off loading overlay when request done
     }
     getData()
   }, [])
@@ -48,6 +48,7 @@ export default function JobsPage() {
   const companiesNameFilter = jobs
     .map((job: Jobs) => job.companyName)
     .concat('All Companies')
+
   // create unique colection using Set method and sort array
   const companies = [...new Set(companiesNameFilter)].sort(
     (a: string, b: string) => a.localeCompare(b)
@@ -66,6 +67,7 @@ export default function JobsPage() {
   const postedDateFilter = jobs
     .map((job: Jobs) => job.postedDate)
     .concat('All Dates')
+
   // create unique colection using Set method and sort array
   const postedDate = [...new Set(postedDateFilter)].sort(
     (a: string, b: string) => b.localeCompare(a)

@@ -14,7 +14,7 @@
 Gostaria de agradecer a [Zippia](https://copybase.com.br/) pela oportunidade de participar do processo seletivo. Foi um desafio muito interessante e divertido de se fazer.
 
 - [Zippia API](https://www.zippia.com/api/jobs/)
-- [Demonstração do Projeto]()
+- [Demonstração do Projeto](https://zippia-nextjs.vercel.app/)
 
 ## Principais Funcionalidades
 
